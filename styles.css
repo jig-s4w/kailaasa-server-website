@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Varela Round';
-    /* font-family: 'Akrobat'; */
+    
     font-weight: 400;
     line-height: 1;
     font-size: 16px;
@@ -15,9 +15,7 @@ body {
     color: #fff;
     /* overflow: hidden; */
 }
-.b-overflow{
-    /* overflow: hidden; */
-}
+
 
 section{
     display: block;
@@ -124,6 +122,132 @@ header .topline .container{
     width:1200px;
     height: 900px;
     position: absolute;
-    top:80px;
+    top:80px; 
+}
+.header-middle-content{
+    display: flex;
+    padding-top: 250px;
+    gap:900px;
+    top:450px; 
+
+}
+.discord-members-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 350px;
+    height: 200px;
+    border: 0px solid rgba(255, 251, 9, 0.5);
+    border-right: transparent;
+    border-radius: 10px;
+    transform: skewX(-20deg);
+    box-shadow: rgb(255, 208, 0) -1px 4px 3px -2px;
+}
+
+.active-members-logo{ 
+    width: 180px;
+    height: 200px;
+    transform: skewX(20deg);
+}
+
+.active-members-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:25px;
+    justify-content: space-between;
+    transform: skewX(20deg);
+    font-weight: bolder;
     
+}
+
+.active-members-content>p{
+    color: rgb(255, 255, 255);
+
+    font-size: 24px;
+    text-align: center;
+    text-shadow: black 0.1em 0.1em 0.2em
+}
+.discord-members-count{
+    
+    font-size: 40px;
+
+    text-shadow: black 0.1em 0.1em 0.2em,0.1em 0.4em 0.1em rgba(255, 255, 255,0.2)
+}
+
+.discord-fivem-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 350px;
+    height: 200px;
+    border: 0px solid rgba(255, 251, 9, 0.5);
+    border-right: transparent;
+    border-radius: 10px;
+    transform: skewX(-20deg);
+    box-shadow: rgb(255, 208, 0) 1px -4px 3px -1px;
+}
+
+.tanker-image{ 
+    position: absolute;
+    left:-50px;
+    top:-100px;
+    width: 400px;
+    height: 250px;
+    transform: skewX(20deg);
+}
+.discord-fivem-button{
+    width: 400px;
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+}
+.discord-fivem-button>a{
+    padding:7px;
+    transform: skewX(20deg);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    background-image: linear-gradient(yellow, yellow); 
+    background-size: 0 2px, auto;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    transition: all 0.3s ease-out;
+}
+.discord-fivem-button>a:hover{
+    border-radius: 25px;
+    background-size: 100% 2px, auto;
+    box-shadow: rgb(251, 255, 0) 0px 30px 60px -18px inset, rgb(255, 255, 0) 0px 18px 36px -18px inset;
+}
+
+.discord-fivem-button>a>img{
+    width: 36px;
+    height: 36px; 
+}
+
+.discord-fivem-button>a>span{
+    font-size: 24px;
+}
+
+.white-screen{
+    background:url(./images/whitescreen.png) no-repeat;
+    background-size: 100% 100%;
+    width:100%;
+    height: 300px;
+    position: absolute;
+    top: 850px;
+
+}
+
+main {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: url(./images/bg-footer.png) no-repeat;
+    width: 100%;
+    height: 1159px;
 }
