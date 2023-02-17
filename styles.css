@@ -1,214 +1,240 @@
-*{
-    outline: 0;
-    margin:0;
-    padding: 0;
-    border: 0;
-}
 
-body {
-    font-family: 'Varela Round';
-    
-    font-weight: 400;
-    line-height: 1;
-    font-size: 16px;
-    background: #fff;
-    color: #fff;
-    /* overflow: hidden; */
-}
-
-
-section{
-    display: block;
-}
-
-header {
+body{
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
-    border: 0;
-    background: url(./images/bg-main.png) no-repeat;
     width: 100%;
-    height: 989px;
-}
-.topline{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 200px;
-    z-index: 1;
-    /* background-color: aquamarine; */
-    
-}
-.header-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
+    height: 100%;
+    text-transform: uppercase;
 }
 
-header .topline .container{
+header{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
-    justify-content: space-between;
+    overflow: hidden;
     width: 100%;
-    max-width: 1650px;
-    height: 100px;
-    /* background-color: rgb(0, 255, 55);   */
-}
-
-.header-left-wrap{
-    width: 100%;
-    max-width: 300px;
-    height: 80px;
-    /* background-color: beige; */
-    
-}
-.logo-desc-wrap{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    text-decoration: none;
-}
-.header-left-wrap .logo>img{
-    width: 98px;
-    height: 84px;
-}
-.header-left-wrap .desc{
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    text-transform: uppercase;
-    color: #fff;
-    font-size: 19px;
-}
-.header-left-wrap .desc span{
-    color: yellow;
-}
-
-.header-menu{
-    text-transform: uppercase;
-    display: flex;
-    list-style: none;
-    text-decoration: none;
-    gap:100px;
-}
-.header-hover-link{
-    color: white;
-    text-decoration: none;
-    font-size:24px;
-}
-
-.header-menu>li>a{
-    /* font: 1em Arial, sans-serif; */
-    display: inline-block;
-    padding: 0.25em;margin: 0.25em;
-    /*   border-radius: 5px; */
-     text-decoration: none; 
-    color: #fff;
-    background-image: linear-gradient(yellow, yellow); 
-    background-size: 0 2px, auto;
+    height:989px;
+    background-image: url(./images/banner_1_name.jpg) ;
     background-repeat: no-repeat;
-    background-position: center bottom;
-    transition: all 0.3s ease-out;
-}
-.header-menu>li>a:hover{
-    background-size: 100% 2px, auto;
+    background-position:center;
 }
 
-.cayo-image{
-    background:url(./images/cayo.png) no-repeat;
-    background-size: 100% 100%;
-    width:1200px;
-    height: 900px;
-    position: absolute;
-    top:80px; 
-}
-.header-middle-content{
-    display: flex;
-    padding-top: 250px;
-    gap:900px;
-    top:450px; 
-
-}
-.discord-members-container{
+.header-container{
+    
+    width: 100%;
+    /* padding:30px; */
+    padding: 30px 30px 0px 30px;
+    margin-bottom: -70px;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 350px;
-    height: 200px;
-    border: 0px solid rgba(255, 251, 9, 0.5);
-    border-right: transparent;
-    border-radius: 10px;
-    transform: skewX(-20deg);
-    box-shadow: rgb(255, 208, 0) -1px 4px 3px -2px;
+    flex-basis: 100%;
+    z-index: 1;
 }
 
-.active-members-logo{ 
-    width: 180px;
-    height: 200px;
-    transform: skewX(20deg);
+.logo-desc-header{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: white;
 }
 
-.active-members-content{
+.logo-header>img{
+    width: 100px; 
+}
+
+.desc-header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap:25px;
-    justify-content: space-between;
-    transform: skewX(20deg);
-    font-weight: bolder;
-    
 }
-
-.active-members-content>p{
-    color: rgb(255, 255, 255);
-
-    font-size: 24px;
-    text-align: center;
-    text-shadow: black 0.1em 0.1em 0.2em
+.desc-header>b{
+    font-weight: 800;
+    font-size: 18px;
 }
-.discord-members-count{
-    
-    font-size: 40px;
-
-    text-shadow: black 0.1em 0.1em 0.2em,0.1em 0.4em 0.1em rgba(255, 255, 255,0.2)
+.desc-1{
+    font-weight: 500;
 }
-
-.discord-fivem-container{
+.desc-2{
+    font-weight: 200;
+    color: #a4bc28;
+}
+.menu-header{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    width: 350px;
-    height: 200px;
-    border: 0px solid rgba(255, 251, 9, 0.5);
-    border-right: transparent;
-    border-radius: 10px;
-    transform: skewX(-20deg);
-    box-shadow: rgb(255, 208, 0) 1px -4px 3px -1px;
+    gap: 20px;  
+}
+/* .menu-header>a{  */
+    /* --c: #ffffff; */
+    /* the height */
+    /* --h: 1.4em; */
+    /* The first hover effect in this article */
+    /* line-height: var(--h);   */
+    /* color: #0000; */
+    /* overflow: hidden; */
+    /* text-shadow:  */
+    /* 0 calc(-1 * var(--_t, 0em)) var(--c),  */
+    /* 0 calc(var(--h) - var(--_t, -1em)) #1095c1; */
+  /* The second hover effect from the previous article */
+    /* background:  */
+    /* linear-gradient(var(--c) 0 0) no-repeat  */
+    /* calc(200% - var(--_p, -2%)) 100% / 200% var(--_p, .08em); */
+    /* transition: .3s var(--_s, 0s), background-position .3s calc(.3s - var(--_s, 0s)); */
+    /* padding:5px; */
+/* }  */
+
+/* .menu-header>a:hover{ */
+    /* --_t: var(--h); */
+    /* --_p: 100%; */
+    /* --_s: .3s */
+/* } */
+.menu-header>a{
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    padding: 0.25em;margin: 0.25em;
+    color: #fff;
+    background-image: linear-gradient(#a4bc28, #a4bc28); 
+    background-size: 0 2px, auto;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    transition: all 0.2s ease-out;
+}
+.menu-header>a:hover{
+    color: #a4bc28;
+    text-shadow: 0 0 10px #a4bc28,
+    0 0 20px #a4bc28,
+    0 0 40px #a4bc28,
+    0 0 80px #a4bc28,
+    0 0 160px #a4bc28;
+    background-size: 100% 2px, auto;
 }
 
-.tanker-image{ 
-    position: absolute;
-    left:-50px;
-    top:-100px;
-    width: 400px;
+
+.menu-header>a>span{
+    font-size: 18px;
+}
+.header-image{
+
+    background-image: url(./images/rendupenoruann.png);
+    width: 100%;
+    height: 100%;
+    transform: scale(0.8);
+    background-repeat: no-repeat;
+    background-position:center;
+}
+.header-white-image{
+    background-image: url(./images/whitescreen.png);
+    width: 100%;
+    height:300px;
+    position: relative;
+    top: -225px;
+    /* background-repeat: no-repeat; */
+    background-position: top center;
+}
+
+.header-content{
+    width: 100%;
     height: 250px;
-    transform: skewX(20deg);
+    position: absolute;
+    top: 450px;
+    z-index: 1;
+    display: flex;
+    justify-content: space-evenly;
+    gap:350px;
+    flex-wrap: wrap;
+    align-items: center;
 }
+
+.header-content-left{
+    width: 125px;
+    height: 25px;
+    transform: skewX(-40deg);
+    box-shadow:1px 1px 30px 1px #a4bc28,1px 1px 1px 40px rgba(164,188,40,0.5) inset;
+    padding: 25px 15px 25px 15px;
+    margin: 5px 1px 3px 0px;
+    border: 3px solid rgba(164,188,40,0.6);
+    z-index: 1;
+}
+.header-content-left-inside{
+    position: absolute;
+    display: flex;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    border: 3px solid rgba(8, 255, 243, 0.6);
+    box-shadow:1px 1px 30px 1px rgb(8,255,243),1px 1px 1px 40px rgba(8,255,243,0.5) inset;
+}
+.header-content-left-inside>b{
+    color: #fff;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    transform: skewX(40deg);
+}
+.discord-mem-count{
+    color: white;
+    font-size: 30px;
+    font-weight: 900;
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    transform: skewX(40deg);
+    text-shadow: 0 0 10px #a4bc28,
+    0 0 20px #a4bc28,
+    0 0 40px #a4bc28,
+    0 0 80px #a4bc28,
+    0 0 160px #a4bc28;
+}
+.header-content-right{
+    width: 125px;
+    height: 25px;
+    transform: skewX(40deg);
+    box-shadow:1px 1px 30px 1px #a4bc28,1px 1px 1px 40px rgba(164,188,40,0.5) inset;
+    padding: 25px 15px 25px 15px;
+    margin: 5px 1px 3px 0px;
+    border: 3px solid rgba(164,188,40,0.6);
+    z-index: 1;
+}
+.header-content-right-inside{
+    position: absolute;
+    display: flex;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    border: 3px solid rgba(8, 255, 243, 0.6);
+    box-shadow:1px 1px 30px 1px rgb(8,255,243),1px 1px 1px 40px rgba(8,255,243,0.5) inset;
+}
+.header-content-right-inside>span{
+    color: white;
+    font-size: 10px;
+    font-weight: 900;
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    transform: skewX(-40deg);
+    text-shadow: 0 0 10px #a4bc28,
+    0 0 20px #a4bc28,
+    0 0 40px #a4bc28,
+    0 0 80px #a4bc28,
+    0 0 160px #a4bc28;
+}
+
 .discord-fivem-button{
-    width: 400px;
+    width: 100px;
+    height: 50px;
     gap: 20px;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 .discord-fivem-button>a{
     padding:7px;
-    transform: skewX(20deg);
+    transform: skewX(-40deg);
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 1px;
     text-decoration: none;
     font-size: 20px;
     color: #fff;
@@ -219,35 +245,68 @@ header .topline .container{
     transition: all 0.3s ease-out;
 }
 .discord-fivem-button>a:hover{
-    border-radius: 25px;
+    color: #a4bc28;
+    text-shadow: 0 0 10px #a4bc28,
+    0 0 20px #a4bc28,
+    0 0 40px #a4bc28,
+    0 0 80px #a4bc28,
+    0 0 160px #a4bc28;
     background-size: 100% 2px, auto;
-    box-shadow: rgb(251, 255, 0) 0px 30px 60px -18px inset, rgb(255, 255, 0) 0px 18px 36px -18px inset;
 }
 
 .discord-fivem-button>a>img{
-    width: 36px;
-    height: 36px; 
+    width: 15px;
+    height: 15px; 
 }
 
 .discord-fivem-button>a>span{
-    font-size: 24px;
+    margin-left: 4px;
+    font-size: 12px;
 }
 
-.white-screen{
-    background:url(./images/whitescreen.png) no-repeat;
-    background-size: 100% 100%;
-    width:100%;
-    height: 300px;
-    position: absolute;
-    top: 850px;
-
-}
-
-main {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    background: url(./images/bg-footer.png) no-repeat;
+/* Main CSS */
+main{
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url(./images/bg-footer.png);
+    background-repeat: no-repeat;
+    background-position:center;
     width: 100%;
-    height: 1159px;
+    height:1159px;
+}
+
+@media only screen and (max-width: 840px){
+    header{
+        display: flex;
+        width: 100%;
+        background-color: aqua;  
+        
+    }
+
+    .header-container{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+        margin-bottom:200px;
+    }
+    
+    .logo-desc-header{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .logo-header>img{
+        width: 75px; 
+    }
+    .menu-header{
+        flex-direction: column;
+        align-items: center;
+         
+    }
+    .header-image{
+        transform: scale(1);
+    }
 }
