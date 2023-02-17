@@ -103,11 +103,12 @@ header{
 }
 .menu-header>a:hover{
     color: #a4bc28;
-    text-shadow: 0 0 10px #a4bc28,
+    text-shadow: 0 0 10px #a4bc28;
+    /* text-shadow: 0 0 10px #a4bc28,
     0 0 20px #a4bc28,
     0 0 40px #a4bc28,
     0 0 80px #a4bc28,
-    0 0 160px #a4bc28;
+    0 0 160px #a4bc28; */
     background-size: 100% 2px, auto;
 }
 
@@ -247,11 +248,12 @@ header{
 }
 .discord-fivem-button>a:hover{
     color: rgb(8,255,243);
-    text-shadow: 0 0 10px rgb(8,255,243),
+    text-shadow: 0 0 10px rgb(8,255,243);
+    /* text-shadow: 0 0 10px rgb(8,255,243),
     0 0 20px rgb(8,255,243),
     0 0 40px rgb(8,255,243),
     0 0 80px rgb(8,255,243),
-    0 0 160px rgb(8,255,243);
+    0 0 160px rgb(8,255,243); */
     background-size: 100% 2px, auto;
 }
 
