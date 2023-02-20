@@ -18,6 +18,7 @@ header{
     background-image: url(./images/banner_1_name.jpg) ;
     background-repeat: no-repeat;
     background-position:center;
+    background-size: 100% 100%;
 }
 
 .header-container{
@@ -210,7 +211,7 @@ header{
 }
 .header-content-right-inside>span{
     color: white;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 900;
     position: absolute;
     top: -20px;
@@ -266,7 +267,7 @@ header{
 .discord-fivem-button>a>span{
     font-weight: 900;
     margin-left: 4px;
-    font-size: 8px;
+    font-size: 10px;
 }
 
 /* Main CSS */
@@ -412,7 +413,183 @@ main{
     pointer-events: none;
     z-index: 1;
 }
+.green-truck{
+    position: absolute;
+    bottom:-1340px;
+    left: 100px;
+    background: url(./images/car.png) no-repeat;
+    background-size: 100% 100%;
+    width: 450px;
+    height: 300px;
+    pointer-events: none;
+    z-index: 1;
+}
 
+footer{
+    background: url(./images/footer.jpg) no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 700px;
+    background-position: top center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer>.footer-white-image{
+    display: flex;
+    background-image: url(./images/whitescreen.png);
+    width: 100%;
+    height:300px;
+    position: relative;
+    top: -100px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100% 100%;  
+}
+.footer-socials{
+    width:900px;
+    height: 150px;
+    /* background-color: #aa2424; */
+    margin-top:-100px;
+    z-index: 1;
+    display: flex;
+    transform: rotate(-2deg);
+    gap: 20px;
+}
+.socials{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width:300px;
+    height: 100%;
+    /* border: 1px solid black; */
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.socials-logo{
+    width:75px;
+    height: 75px;
+}
+.socials>span{
+    font-size: 20px;
+    font-weight: 900;
+    color: white;
+}
+.discord{
+    background-color: rgba(115, 138, 219,0.6);
+}
+.discord:hover{
+    background-color: rgba(115, 138, 219,0.8)
+}
+.youtube{
+    background-color: rgba(255, 63, 63,0.6);
+}
+.youtube:hover{
+    background-color: rgba(255, 63, 63, 0.8)
+}
+.instagram{
+    background-color: rgba(254,218,117,0.6);
+}
+.instagram:hover{
+    background-color: rgba(254,218,117,0.8)
+}
+.footer-content{
+    /* background-color: #aa2424; */
+    height: 300px;
+    width: 1100px;
+    display: flex;
+    justify-content: flex-start;
+    gap:50px;
+}
+.footer-logo-desc{
+    display: flex;
+    gap:20px;
+}
+.footer-logo-desc-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* justify-content: space-around; */
+}
+.footer-logo>img{
+    width: 75px;
+    height: 75px;
+}
+.footer-logo-name{
+    color:white;
+    display: flex;
+    flex-direction: column;
+}
+.footer-desc-wrapper{
+    display: flex;
+    align-items: center;
+    width: 400px;
+}
+.footer-desc-wrapper>span{
+    font-size: 12px;
+    color: white;
+}
+
+
+.footer-menu{
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;  
+}
+.footer-menu>a{
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    padding: 0.25em;margin: 0.25em;
+    color: #fff;
+    background-image: linear-gradient(#a4bc28, #a4bc28); 
+    background-size: 0 2px, auto;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    transition: all 0.2s ease-out;
+}
+.footer-menu>a:hover{
+    color: #a4bc28;
+    text-shadow: 0 0 10px #a4bc28;
+    background-size: 100% 2px, auto;
+}
+
+
+.footer-menu>a>span{
+    font-size: 12px;
+}
+.support-menu{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    justify-content: center;
+    gap:20px;
+    
+}
+.support-menu>div{
+    display: flex;
+    flex-direction: column;
+}
+.support-menu>div>b{
+    color: #a4bc28;
+    font-size: 12px;
+}
+.support-menu>div>span{
+    color: white;
+    font-size: 10px;
+}
+@media only screen and (max-width: 1700px){
+    .money-man{
+        width: 494px;
+        height: 587px;
+    }
+}
 
 @media only screen and (max-width: 840px){
     header{
@@ -458,4 +635,71 @@ main{
         flex-wrap: wrap;
         align-items: center;
     }
+    .money-man{
+        display: none;
+    }
+
+    .main-container{
+        width: 500px;
+        height: 900px;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .main-tabs{
+        width:500px;
+        height: 300px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .tabs-selection{
+        width: 200px;
+        height: 150px;
+    }
+    .main-content{
+        width: 500px;
+        height: 500px;
+    }
+    .main-content-text{
+        top:750px;
+    }
+    .header-white-image{
+        top:-550px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .main-container{
+        width: 400px;
+        height: 800px;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .main-tabs{
+        width:400px;
+        height: 250px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .tabs-selection{
+        width: 120px;
+        height: 75px;
+        font-size: 10px;
+    }
+    .tabs-selection-content{
+        font-size: 10px;
+        gap:2px;
+    }
+    .main-content{
+        width: 350px;
+        height: 350px;
+    }
+    .main-content-text{
+        top:650px;
+        font-size: 10px;
+    }
+    .header-content{
+        flex-direction: column;
+    }
+  
+    
 }
