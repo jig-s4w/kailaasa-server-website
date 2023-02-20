@@ -584,6 +584,31 @@ footer>.footer-white-image{
     color: white;
     font-size: 10px;
 }
+@media only screen and (max-height: 900px){
+    .green-truck{
+        bottom:-1400px;
+    }
+}
+@media only screen and (max-height: 850px){
+    .green-truck{
+        bottom:-1450px;
+    }
+}
+@media only screen and (max-height: 800px){
+    .green-truck{
+        bottom:-1500px;
+    }
+}
+@media only screen and (max-height: 758px){
+    .green-truck{
+        bottom:-1550px;
+    }
+}
+@media only screen and (max-height: 705px){
+    .green-truck{
+        display: none;
+    }
+}
 @media only screen and (max-width: 1700px){
     .money-man{
         width: 494px;
