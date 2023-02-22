@@ -38,15 +38,16 @@ header{
 .logo-desc-header{
     display: flex;
     align-items: center;
-    gap: 20px;
+    /* gap: 20px; */
     color: white;
 }
 
 .logo-header>img{
-    width: 100px; 
+    width: 175px; 
 }
 
 .desc-header{
+    margin-left:-20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -59,7 +60,7 @@ header{
     font-weight: 500;
 }
 .desc-2{
-    font-weight: 400;
+    font-weight: 550;
     color: #a4bc28;
 }
 .menu-header{
@@ -131,7 +132,7 @@ header{
     width: 100%;
     height:300px;
     position: relative;
-    top: -225px;
+    top: -275px;
     /* background-repeat: no-repeat; */
     background-position: top center;
 }
@@ -143,7 +144,7 @@ header{
     top: 450px;
     z-index: 1;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     gap:350px;
     flex-wrap: wrap;
     align-items: center;
@@ -215,7 +216,7 @@ header{
     font-weight: 900;
     position: absolute;
     top: -20px;
-    left:5px;
+    left:10px;
     transform: skewX(-40deg);
     text-shadow: 0 0 10px #a4bc28,
     0 0 20px #a4bc28,
@@ -352,21 +353,21 @@ main{
     gap: 10px;
     position: absolute;
     color: white;
-    width: 350px;
+    width: 500px;
     padding-left: 20px;
     top:600px;
 
 }
 .main-content-image{
     
-    background-image: url(./images/tab-1-content.jpg); 
+    background-image: url(./images/cars.png); 
     width:100%;
     height: 100%;
 }
 
 .tabs-selection-img1{
     
-    background: url(./images/tab-1-icon.png) no-repeat;
+    background: url(./images/car13.png) no-repeat;
     background-size: 100% 100%;
     width: 200px;
     height: 100px;
@@ -375,31 +376,31 @@ main{
     top:40px;
 }
 .tabs-selection-img2{
-    background: url(./images/tab-2-icon.png) no-repeat;
+    background: url(./images/gangicon.png) no-repeat;
     background-size: 100% 100%;
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 180px;
     position: absolute;
-    right: 820px;
-    top:192px;
+    right: 810px;
+    top:162px;
 }
 .tabs-selection-img3{
-    background: url(./images/tab-3-icon.png) no-repeat;
+    background: url(./images/girl.png) no-repeat;
     background-size: 100% 100%;
-    width: 250px;
-    height: 250px;
+    width: 165px;
+    height: 175px;
     position: absolute;
-    right: 750px;
-    top:350px;
+    right: 810px;
+    top:345px;
 }
 .tabs-selection-img4{
-    background: url(./images/tab-4-icon.png) no-repeat;
+    background: url(./images/heist.png) no-repeat;
     background-size: 100% 100%;
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 180px;
     position: absolute;
-    right: 740px;
-    top:520px;
+    right: 710px;
+    top:518px;
 }
 
 .money-man{
@@ -415,12 +416,13 @@ main{
 }
 .green-truck{
     position: absolute;
-    bottom:-1340px;
-    left: 100px;
-    background: url(./images/car.png) no-repeat;
+    /* bottom:-1240px; */
+    top:1930px;
+    left: -200px;
+    background: url(./images/ponnu.png) no-repeat;
     background-size: 100% 100%;
-    width: 450px;
-    height: 300px;
+    width: 950px;
+    height: 500px;
     pointer-events: none;
     z-index: 1;
 }
@@ -656,7 +658,7 @@ footer>.footer-white-image{
         z-index: 1;
         display: flex;
         justify-content: center;
-        gap:75px;
+        gap:400px;
         flex-wrap: wrap;
         align-items: center;
     }
