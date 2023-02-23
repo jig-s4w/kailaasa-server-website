@@ -25,7 +25,7 @@ header{
     
     width: 100%;
     /* padding:30px; */
-    padding: 30px 30px 0px 30px;
+    padding: 0px 30px 0px 30px;
     margin-bottom: -70px;
     height: auto;
     display: flex;
@@ -372,7 +372,7 @@ main{
     width: 200px;
     height: 100px;
     position: absolute;
-    right: 790px;
+    right: 780px;
     top:40px;
 }
 .tabs-selection-img2{
@@ -387,10 +387,10 @@ main{
 .tabs-selection-img3{
     background: url(./images/girl.png) no-repeat;
     background-size: 100% 100%;
-    width: 165px;
+    width: 135px;
     height: 175px;
     position: absolute;
-    right: 810px;
+    right: 830px;
     top:345px;
 }
 .tabs-selection-img4{
@@ -586,31 +586,7 @@ footer>.footer-white-image{
     color: white;
     font-size: 10px;
 }
-@media only screen and (max-height: 900px){
-    .green-truck{
-        bottom:-1400px;
-    }
-}
-@media only screen and (max-height: 850px){
-    .green-truck{
-        bottom:-1450px;
-    }
-}
-@media only screen and (max-height: 800px){
-    .green-truck{
-        bottom:-1500px;
-    }
-}
-@media only screen and (max-height: 758px){
-    .green-truck{
-        bottom:-1550px;
-    }
-}
-@media only screen and (max-height: 705px){
-    .green-truck{
-        display: none;
-    }
-}
+
 @media only screen and (max-width: 1700px){
     .money-man{
         width: 494px;
