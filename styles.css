@@ -37,7 +37,7 @@ header{
     justify-content: center;
 }
 .main-2{
-    display: block;
+    display: flex;
     background: url(./images/bg-main.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -46,6 +46,8 @@ header{
     background-size: cover;
     background-attachment: fixed;
     overflow: hidden;
+    justify-content: center;
+    align-items: center;
 }
 footer{
     display: block;
@@ -460,7 +462,6 @@ footer{
     color: white;
 }
 
-
 .footer-menu{
     margin-left: 30px;
     display: flex;
@@ -514,29 +515,24 @@ footer{
 }
 
 .footer-socials{
+    width:900px;
+    height: 150px;
+    /* background-color: #aa2424; */
+    margin-top:-100px;
+    z-index: 1;
     display: flex;
-    width: 101%;
-    height: 200px;
-    /* background-color: #a4bc28; */
-    transform: rotate(-1.5deg);
+    transform: rotate(-2deg);
+    gap: 20px;
 }
-.footer-socials>div{
-    width: 36.6%;
-    height: 100%;
-
-}
-
 .socials{
     display: flex;
-    justify-content: flex-start;
-    padding-left: 5rem;
-    gap:20px;
+    justify-content: space-evenly;
     align-items: center;
     width:300px;
     height: 100%;
     /* border: 1px solid black; */
     cursor: pointer;
-    
+    border-radius: 10px;
 }
 
 .socials-logo{
@@ -566,9 +562,65 @@ footer{
 .instagram:hover{
     background-color: rgba(254,218,117,0.8)
 }
+
+.trailer-container{
+    margin-left: 20rem;
+    margin-bottom:5rem;
+    transform: rotate(-2.5deg);
+}
+.trailer-man{
+    position: absolute;
+    /* bottom:-1240px; */
+    top:2350px;
+    left: 100px;
+    background: url(./images/man.png) no-repeat;
+    background-size: 100% 100%;
+    width: 850px;
+    height: 700px;
+    pointer-events: none;
+    z-index: 1;
+}
+.trailer-content{
+    width: 550px;
+    position: absolute;
+    top:2350px;
+    left: 10px;
+    transform: rotate(-6.25deg);
+    color: white;
+    text-align: center;
+    font-weight: 900;
+    font-size: 2.5rem;
+    z-index: 2;
+
+}
 @media only screen and (max-width: 1700px){
     .money-man{
         width: 494px;
         height: 587px;
+    }
+}
+@media only screen and (max-width: 1200px){
+    .trailer-man{
+        left: -260px;
+    }
+}
+@media only screen and (max-width: 1900px){
+    .trailer-man{
+        left: 0px;
+    }
+}
+@media only screen and (max-width: 1800px){
+    .trailer-man{
+        left: -80px;
+    }
+}
+@media only screen and (max-width: 1700px){
+    .trailer-man{
+        left: -120px;
+    }
+}
+@media only screen and (max-width: 1500px){
+    .trailer-man{
+        left: -220px;
     }
 }
